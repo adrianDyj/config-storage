@@ -1,1 +1,11 @@
-
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: dictionary-route
+          predicates:
+            - Path=/api/dictionary/**
+          uri: lb://DICTIONARY-SERVICE
+          filters:
+            - RewritePath=/api/dictionary(?<segment>.*), $\{segment}
+            - RewriteLocationResponseHeader=AS_IN_REQUEST, Location, localhost:8010/api/dictionary

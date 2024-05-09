@@ -1,2 +1,12 @@
 server:
   port: 8020
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:10100/javaleak-db-test
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    generate-ddl: none
+    open-in-view: false

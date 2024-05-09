@@ -8,5 +8,5 @@ spring:
     password: postgres
     driver-class-name: org.postgresql.Driver
   jpa:
-    generate-ddl: none
+    generate-ddl: false
     open-in-view: false

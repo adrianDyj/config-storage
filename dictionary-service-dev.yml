@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:10200/jl_dictionary_dev
+    url: jdbc:postgresql://localhost:10200/dictionary_dev
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver

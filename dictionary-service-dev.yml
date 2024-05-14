@@ -1,2 +1,12 @@
 server:
   port: 8010
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:10200/jl-dictionary-dev
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    generate-ddl: false
+    open-in-view: false

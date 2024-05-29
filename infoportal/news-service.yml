@@ -1,13 +1,5 @@
 server:
   port: 8121
-eureka:
-  instance:
-    hostname: localhost
-    prefer-ip-address: true
-  client:
-    should-enforce-registration-at-init: false
-    serviceUrl:
-      defaultZone: http://localhost:8110/eureka/
 
 spring:
   datasource:

@@ -1,0 +1,21 @@
+server:
+  port: 8121
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  client:
+    should-enforce-registration-at-init: false
+    serviceUrl:
+      defaultZone: http://localhost:8110/eureka/
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:10300/news_dev
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+    initialization-mode: always
+  jpa:
+    generate-ddl: false
+    open-in-view: false
